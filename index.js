@@ -1,0 +1,1 @@
+export { default as Inicio } from "./src/screens/Inicio.js";

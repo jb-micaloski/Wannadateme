@@ -1,4 +1,4 @@
-This project was created with [BuilderX](https://builderx.io/).
+This component was created with [BuilderX](https://cloud.builderx.io/).
 
 ## BuilderX uses third party libraries for some of the react components such as
 
@@ -6,21 +6,29 @@ This project was created with [BuilderX](https://builderx.io/).
 @material-ui/core@4.2.1
 google-map-react@1.1.4
 material-ui-slider@3.0.8
+pure-react-carousel@1.21.1
+react-list@0.8.11
 react-router-dom@5.0.1
 styled-components@4.3.2
 react-native-vector-icons
 ```
 
-These packages are included as dependencies in package.json file.
+You can add these packages by running `yarn add [packageName]` or `npm install [packageName]`
 
-## Steps to run project
+## Please add the extracted component folder in your project and import the component folder.
 
-In the project directory, you can run:
+Eg import Component from `[folder path]`
 
-### `yarn` or `npm install`
+**Note: You might need to load custom fonts that has been used in the component. Font files are available in the `assets/fonts` folder.**
 
-This will add the dependencies required to run the project.
+- Create style.css at the root of you project
+- Add each font like this
 
-### `yarn start` or `npm start`
+```
+@font-face {
+  font-family: <fontName>;
+  src: url(<relative-path-to-font-file>) format(<file-format>);
+}
+```
 
-This will start the project.
+- import style.css in your index.js file
